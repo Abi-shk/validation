@@ -184,7 +184,7 @@ input.invalid {
 }
 #dob:focus{
     background-color: rgba(250, 235, 215, 0.301);
-    color: black;
+    color: rgb(240, 233, 233);
 }
 
 #reloads{

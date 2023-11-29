@@ -167,4 +167,10 @@ h3{
         margin-bottom: 10px;
         width: 100px; 
     }
+    #timer{
+        font-size: medium;
+    }
+    #otpRsnd{
+        font-size: medium;
+    }
 }
