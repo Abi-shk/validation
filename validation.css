@@ -1,0 +1,311 @@
+*, :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;  
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://wallpaperaccess.com/full/1268206.jpg");
+    background-size: cover;
+}
+
+.sub {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(0, 128, 0, 0);
+}
+
+.photo img {
+      position: relative;
+      animation: rotateAndMove 30s linear infinite;
+      width: 200px; 
+      height: 300px;
+}
+
+.photo {
+    width: 50%;
+}
+
+.formbox {
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.46);
+    border-radius: 15px;
+    border: none;
+}
+
+.formbox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.formbox h1 {
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.firstfb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.firstfb input {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
+    color: antiquewhite;
+}
+
+.secondfb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+}
+
+.secondfb input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(243, 239, 239);
+    color: rgb(230, 221, 221);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: x-large;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.153);
+}
+
+::-webkit-input-placeholder {
+    color: antiquewhite;
+}
+
+#dob {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#btn {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: antiquewhite;
+    font-size: large;
+}
+#btn:hover{
+    background-color: rgb(7, 117, 251);
+    color: #07f6a7;
+}
+
+.privacy {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: antiquewhite;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.formbox{
+    border: 2px solid transparent;
+    border-radius: 15px;
+    animation: rotateColors 3s linear infinite;
+}
+
+input.invalid {
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.error{
+    display: none;
+    color: rgb(245, 4, 4);
+    margin-top: 5px;
+    margin-left: 10px;
+    animation: shakes 2s ease-in-out infinite;
+    font-size: larger;
+}
+
+.privacy{
+    display: flex;
+    flex-direction:row;
+    font-size: x-large;   
+}
+
+.err{
+    display: flex;
+    flex-direction: column;
+}
+
+#psw:focus{
+    background-color: rgba(250, 235, 215, 0.374);
+    color: black;
+
+}
+#cpsw:focus{
+    background-color: rgba(250, 235, 215, 0.312);
+    color: black;
+}
+#dob:focus{
+    background-color: rgba(250, 235, 215, 0.301);
+    color: black;
+}
+
+#reload{
+    color: antiquewhite;
+}
+
+/* ----------------------------------------------------RESPONSIVENESS--------------------------------------------------------------------------------- */
+
+@media (max-width:800px) {
+  
+    .photo {
+        display: none;
+    }
+
+    .formbox {
+        width: 100%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.46);
+        border-radius: 15px;
+        border: none;
+    }
+
+    .firstfb {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstfb input {
+        width: 100%;
+        height: 30px;
+    }
+}
+
+/* ----------------------------------------------------------ANIMATIONS----------------------------------------------------------------- */
+
+
+@keyframes rotateAndMove {
+    0% {
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+    }
+    25% {
+      top: 0;
+      left: 100px;
+      transform: rotate(90deg);
+    }
+    50% {
+      top: 100px;
+      left: 200px;
+      transform: rotate(180deg);
+    }
+    75% {
+      top: 200px;
+      left: 0;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 0;
+      left: 0;
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes rotateColors {
+    0% {
+        border-color: #9d47ff; 
+        box-shadow: 0 0 5px #ff6347; 
+      }
+      25% {
+        border-color: #0400ff; 
+        box-shadow: 0 0 5px #6200ff; 
+      }
+      50% {
+        border-color: #b67fff; 
+        box-shadow: 0 0 5px #7fffd4; 
+      }
+      75% {
+        border-color: #8a2be2; 
+        box-shadow: 0 0 5px #8a2be2; 
+      }
+      100% {
+        border-color: #47bfff; 
+        box-shadow: 0 0 5px #b847ff; 
+      }
+  }
+
+@keyframes shake {
+    0% {
+        border-color: transparent;
+    }
+
+    25% {
+        border-color: #ff6347;
+    }
+
+    50% {
+        border-color: #ff6347;
+    }
+
+    75% {
+        border-color: #ff6347;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes shakes {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }

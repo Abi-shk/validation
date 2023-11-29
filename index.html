@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+
+            <div class="photo">
+                <img src="https://i.postimg.cc/HLwXQW5Q/purepng-com-astronautastronautcosmonauttrainedtrainedspaceflightpilotspace-travelerspersonscientist.png" alt="">
+                
+            </div>
+            <div class="formbox">
+                <h1>Form Validation</h1>
+                <form action="" id="myForm">
+                    <div class="firstfb">
+                        <div class="err">
+                            <input type="text" class="inpbox1" name="fname" id="fname" placeholder="First Name" required>
+                            <span class="error" id="nameErr"></span>
+                        </div>
+                        <div class="err">
+                            <input type="text" class="inpbox1" name="lstname" id="lstname" placeholder="Last Name" >
+                            <span class="error" id="lstnameErr"></span>
+                        </div>
+                    </div>
+                    <div class="secondfb">
+                        <input type="email" class="inpbox2" name="email" id="email" placeholder="Enter Email" required >
+                        <span class="error" id="emailErr"></span>
+                        <input type="password" class="inpbox2" name="psw" id="psw" placeholder="Enter Password" required>
+                        <span class="error" id="pswErr"></span>
+                        <input type="password" class="inpbox2" name="cpsw" id="cpsw" placeholder="Confirm Password" required>
+                        <span class="error" id="cpswErr"></span>
+                        <input type="tel" class="inpbox2" name="phone" id="phone" placeholder="Phone Number" required>
+                        <span class="error" id="phoneErr"></span>
+                        <input type="date" class="inpbox2" name="dob" id="dob"  required>
+                        <span class="error" id="dobErr"></span>
+                    </div>
+                    <div class="privacy">
+                            <input type="checkbox" id="privacyPolicyCheckbox" required>
+                            <label for="privacyPolicyCheckbox">I agree to the <a href="privacy_policy.html" target="_blank">Privacy Policy</a></label>
+                        </div>
+                        <span class="error" id="privacyErr"></span>
+                        <button id="btn" type="submit" value="submit" onclick="verification()" disabled>submit</href=></button>
+                        <h3 id="reload"> </h3>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./validation.js"></script>
+</body>
+
+</html>

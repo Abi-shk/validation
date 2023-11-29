@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://wallpapercave.com/wp/wp3308364.jpg");
+    background-size: cover;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#otp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(2, 2, 2, 0.604);
+    height: 80%;
+    width:330px;
+    border: 5px solid rgba(255, 255, 255, 0.847);
+    border-radius: 50px;    
+}
+
+#veri{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+#p{
+    color: antiquewhite;
+    text-align: center;
+    font-size: large;
+    font-family: 'Pacifico', cursive;
+}
+#emailV{
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: medium;
+    font-family: 'Pacifico', cursive;
+}
+.btn{
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; 
+    background-color: rgb(5, 247, 114);
+    color: rgb(11, 11, 11);
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(5, 147, 69);
+    color: rgb(11, 11, 11);
+}
+#errMsg{
+    display: none;
+    color: red;
+    font-size: larger;
+    margin-top: 20px;
+}
+#errMsg2{
+    display: none;
+    color: red;
+    font-size: larger;
+}
+#timer{
+    color: antiquewhite;
+}
+.veri{
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: medium;
+    font-family: 'Pacifico', cursive;
+}
+.otpVerify{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#btnO{
+    width: 100px;
+}
+#mailBox{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#success{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 10%;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
+    background-color: rgba(3, 2, 0, 0.488);
+}
+#msg{
+    color: antiquewhite;
+    font-family: 'Pacifico', cursive;
+    margin-right: 10px;
+}
+.photo{
+    height: 30px;
+    width: 30px;
+}
+
+/* --------------------------------------RESPONSIVENESS--------------------------------------------------------------- */
+
+
+@media (max-width:400px){
+    #otp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(2, 2, 2, 0.604);
+        height: 70%;
+        width:250px;
+        border: 5px solid rgba(255, 255, 255, 0.847);
+        border-radius: 50px; 
+    }
+    #logo{
+        display: flex;
+    }
+    #veri{
+        font-size: 30px;
+    }
+    .veri{
+        width: 200px;
+    }
+    #btnO{
+        margin-top: 20px;
+    }
+    #emailV{
+        height: 45px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: medium;
+        font-family: 'Pacifico', cursive;
+    }
+    .btn{
+        margin-bottom: 10px;
+        width: 100px; 
+    }
+}

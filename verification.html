@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./verification.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div id="success">
+            <h2 id="msg">Email Verified</h2>
+            <img  class="photo" src="https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-HD-Image.png" alt="">
+   </div>
+        <div id="otp">
+            <img id="logo" src="./photos/hiclipart.com.png" alt="">
+            <h1 id="veri">Verification</h1>
+            <div id="mailBox">
+                 
+                <p id="p">We will send you a <strong>One Time Password</strong> on your phone number</p>
+                <input type="email" id="emailV" placeholder="Enter Your Email">
+                <span id="errMsg"></span>
+                <br><br>
+                <button id="btnV" class="btn" onclick="sendOTP()">GET OTP</button>
+            </div>
+            <div class="otpVerify" id="otpVerify">
+                <input type="password" class="veri" id="otpinp" placeholder="Enter the otp send to your mail...." >
+                <span id="errMsg2"></span>
+                <h4 id="timer"></h4>
+
+                <button id="btnO" class="btn">verify</button>
+            </div>
+        </div>
+    </div>
+    <script src="./verification.js"></script>
+</body>
+</html>
