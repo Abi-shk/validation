@@ -44,7 +44,7 @@ function sendOTP() {
                         clearInterval(refresh)
                         location.reload();
                     }
-                    resender.innerText = `Resend code in 00 : ${bTime < 10 ? "0" + bTime : bTime}`;
+                    resender.innerText = ` 00 : ${bTime < 10 ? "0" + bTime : bTime}`;
                     bTime--
 
                 }, 1000);

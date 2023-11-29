@@ -73,7 +73,8 @@ body{
     font-size: larger;
 }
 #timer{
-    color: antiquewhite;
+    color: rgb(247, 75, 12);
+    font-size: x-large;
 }
 .veri{
     height: 45px;
@@ -118,6 +119,13 @@ body{
 .photo{
     height: 30px;
     width: 30px;
+}
+h3{
+    color: antiquewhite;
+}
+#otpRsnd{
+    color: antiquewhite;
+    font-size: x-large;
 }
 
 /* --------------------------------------RESPONSIVENESS--------------------------------------------------------------- */

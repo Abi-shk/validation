@@ -183,5 +183,5 @@ setInterval(() => {
     location.reload();
   }
   seconds--
-  time.innerText = `The page will Reload in  0${minutes}:${remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds}`
+  time.innerText = `0${minutes}:${remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds}`
 }, 1000);
